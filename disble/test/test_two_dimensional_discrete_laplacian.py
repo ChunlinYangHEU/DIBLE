@@ -109,7 +109,7 @@ def test_two_dimensional_discrete_laplacian(data_item, dim):
 
     Returns:
         tuple: A tuple containing the constructed quantum circuit and the encoded Laplacian matrix.
-            - circuit: The quantum circuit object used for block encoding.
+            - circuit: The quantum circuit of block encoding.
             - encoded_matrix: The encoded Laplacian matrix.
     """
     # The number of qubits of register idx
@@ -142,6 +142,7 @@ if __name__ == '__main__':
     ny = 4
     parameters = {'delta_x': delta_x, 'delta_y': delta_y}
 
+    # Dimension of matrix
     dim = nx * ny
 
     # Get all distinct non-zero elements
@@ -168,7 +169,7 @@ if __name__ == '__main__':
     print(encoded_matrix)
     encoded_matrix_pd = pd.DataFrame(encoded_matrix)
     encoded_matrix_pd.to_excel('Laplacian_nx_' + str(nx) + '_ny_' + str(ny) + '_encoded.xlsx')
-    print('||A||_F / ||A_1||_F:')
+    print('Actual subnormalization:')
     print(np.linalg.norm(matrix) / np.linalg.norm(encoded_matrix))
     print('The subnormalization:')
     print(subnormalization)

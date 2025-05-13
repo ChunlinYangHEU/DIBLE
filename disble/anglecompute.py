@@ -11,7 +11,7 @@ def angle_search_binary_tree(vector):
     The binary tree structure is a hierarchical representation of the vector, where each node represents a rotation or scaling operation.
 
     Args:
-        vector (numpy.ndarray): A normalized real vector in ℝ^(2^n), where n is a non-negative integer.
+        vector (numpy.array): A normalized real vector in ℝ^(2^n), where n is a non-negative integer.
 
     Returns:
         tuple: A tuple containing two numpy arrays: the first array contains the norms at each level of the binary tree,

@@ -231,7 +231,7 @@ def oracle_oc(data_function, column_index_set, num_idx_qubits, num_working_qubit
             else:
                 raise ValueError('Unsupported data function type')
 
-        # # Simplify left and right shift gates
+        # Simplify left and right shift gates
         (lk_target_qubits_list, lk_control_qubits_list, lk_control_states_list,
          rk_target_qubits_list, rk_control_qubits_list, rk_control_states_list) \
             = qgates.shift_gates_simplify1(

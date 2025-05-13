@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from disble import blockencoding, tools
 from mindquantum import *
 
@@ -118,9 +119,13 @@ if __name__ == '__main__':
     print(circuit)
     print('The signless laplacian matrix to be encoded (L):')
     print(matrix)
+    matrix_pd = pd.DataFrame(matrix)
+    matrix_pd.to_excel('signless_Laplacian_matrix.xlsx')
     print('The encoded signless laplacian matrix (L1):')
     print(encoded_matrix)
-    print('||L||_F / ||L_1||_F:')
+    encoded_matrix_pd = pd.DataFrame(encoded_matrix)
+    encoded_matrix_pd.to_excel('signless_Laplacian_matrix_encoded.xlsx')
+    print('Actual subnormalization:')
     print(np.linalg.norm(matrix) / np.linalg.norm(encoded_matrix))
-    print('The subnormalization:')
+    print('Theoretical subnormalization:')
     print(subnormalization)

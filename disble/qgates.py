@@ -1,10 +1,9 @@
 from mindquantum import *
 from mindquantum.core.gates import UnivMathGate
-from bitble import tools
+from disble import tools
 import numpy as np
 
 
-# Simulate controlled gate
 def qgate(gate, circuit, target_qubit, control_qubits=None, control_states=None, rotation_angle=None, gate_name=None):
     """
     Simulate a quantum gate on a quantum circuit, including single-qubit gates and controlled gates.

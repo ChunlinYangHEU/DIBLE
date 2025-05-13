@@ -367,9 +367,9 @@ if __name__ == '__main__':
     matrix_A_pd.to_excel('matrix_A.xlsx')
     encoded_matrix_A_pd = pd.DataFrame(encoded_matrix_A)
     encoded_matrix_A_pd.to_excel('matrix_A_encoded.xlsx')
-    print('||A||_F / ||A_1||_F:')
+    print('Actual subnormalization of A:')
     print(np.linalg.norm(matrix_A) / np.linalg.norm(encoded_matrix_A))
-    print('The subnormalization of matrix A:')
+    print('Theoretical subnormalization of A:')
     print(subnormalization_A)
     print('==============================================================================================')
 
@@ -378,9 +378,9 @@ if __name__ == '__main__':
     matrix_B_pd.to_excel('matrix_B.xlsx')
     encoded_matrix_B_pd = pd.DataFrame(encoded_matrix_B)
     encoded_matrix_B_pd.to_excel('matrix_B_encoded.xlsx')
-    print('||B||_F / ||B_1||_F:')
+    print('Actual subnormalization of B:')
     print(np.linalg.norm(matrix_B) / np.linalg.norm(encoded_matrix_B))
-    print('The subnormalization of matrix B:')
+    print('Theoretical subnormalization of B:')
     print(subnormalization_B)
 
     print('==============================================================================================')
