@@ -1,5 +1,5 @@
 # DISBLE
-Dictionary-based block encoding for quantum circuits
+Dictionary-based sparse block encoding for quantum circuits
 
 This algorithm is bulit on top of [mindquantum](https://www.mindspore.cn/mindquantum/docs/en/r0.6/index.html) in Python
 
