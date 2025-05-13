@@ -24,8 +24,14 @@ This algorithm is bulit on top of [mindquantum](https://www.mindspore.cn/mindqua
    ```
    pip install mindquantum
    ```
-
+   Packages used to write matrix into Excel
+   ```
+   pip install pandas
+   ```
+   ```
+   pip install openpyxl
+   ```
 
 ## Note
 
-Put the folder "[disble](https://github.com/ChunlinYangHEU/DISBLE/disble)" under the root directory of your project
+Put the folder "[disble](https://github.com/ChunlinYangHEU/DISBLE/tree/main/disble)" under the root directory of your project
