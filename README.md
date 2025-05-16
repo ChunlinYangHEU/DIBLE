@@ -1,4 +1,4 @@
-# DISBLE
+# DSBLE
 Dictionary-based sparse block encoding for quantum circuits
 
 This algorithm is bulit on top of [mindquantum](https://www.mindspore.cn/mindquantum/docs/en/r0.6/index.html) in Python
@@ -34,4 +34,4 @@ This algorithm is bulit on top of [mindquantum](https://www.mindspore.cn/mindqua
 
 ## Note
 
-Put the folder "[disble](https://github.com/ChunlinYangHEU/DISBLE/tree/main/disble)" under the root directory of your project
+Put the folder "[dsble](https://github.com/ChunlinYangHEU/DISBLE/tree/main/dsble)" under the root directory of your project
