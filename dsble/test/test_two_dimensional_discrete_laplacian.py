@@ -125,12 +125,8 @@ def test_two_dimensional_discrete_laplacian(data_item, dim):
     circuit = blockencoding.qcircuit(data_item=data_item,
                                      num_working_qubits=num_working_qubits)
 
-    # Get the unitary of circuit
-    unitary = circuit.matrix()
-    unitary = np.array(unitary).reshape(2 ** num_qubits, 2 ** num_qubits)
-
     # Get the encoded matrix
-    encoded_matrix = blockencoding.get_encoded_matrix(unitary, num_working_qubits)
+    encoded_matrix = blockencoding.get_encoded_matrix(circuit, num_qubits, num_working_qubits)
 
     return circuit, encoded_matrix
 
@@ -161,17 +157,13 @@ if __name__ == '__main__':
     subnormalization = abs(non_zero_elements[0]) + 2 * (abs(non_zero_elements[1]) + abs(non_zero_elements[2]))
 
     print(circuit)
-    print('The two-dimensional discrete Laplacian to be encoded (A):')
-    print(matrix)
     matrix_pd = pd.DataFrame(matrix)
     matrix_pd.to_excel('Laplacian_nx_' + str(nx) + '_ny_' + str(ny) + '.xlsx')
-    print('The encoded two-dimensional discrete Laplacian (A1):')
-    print(encoded_matrix)
     encoded_matrix_pd = pd.DataFrame(encoded_matrix)
     encoded_matrix_pd.to_excel('Laplacian_nx_' + str(nx) + '_ny_' + str(ny) + '_encoded.xlsx')
     print('Actual subnormalization:')
     print(np.linalg.norm(matrix) / np.linalg.norm(encoded_matrix))
-    print('The subnormalization:')
+    print('Theoretical subnormalization:')
     print(subnormalization)
     error = np.linalg.norm(matrix - subnormalization * encoded_matrix)
     print('The error of block encoding:')

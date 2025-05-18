@@ -88,12 +88,8 @@ def test_signless_laplacian_matrix(data_item, dim):
     circuit = blockencoding.qcircuit(data_item=data_item,
                                      num_working_qubits=num_working_qubits)
 
-    # Get the unitary of circuit
-    unitary = circuit.matrix()
-    unitary = np.array(unitary).reshape(2 ** num_qubits, 2 ** num_qubits)
-
     # Get the encoded matrix
-    encoded_matrix = blockencoding.get_encoded_matrix(unitary, num_working_qubits)
+    encoded_matrix = blockencoding.get_encoded_matrix(circuit, num_qubits, num_working_qubits)
 
     return circuit, encoded_matrix
 
@@ -117,12 +113,8 @@ if __name__ == '__main__':
     subnormalization = abs(alpha1) + abs(alpha2) + abs(alpha3)
 
     print(circuit)
-    print('The signless laplacian matrix to be encoded (L):')
-    print(matrix)
     matrix_pd = pd.DataFrame(matrix)
     matrix_pd.to_excel('signless_Laplacian_matrix.xlsx')
-    print('The encoded signless laplacian matrix (L1):')
-    print(encoded_matrix)
     encoded_matrix_pd = pd.DataFrame(encoded_matrix)
     encoded_matrix_pd.to_excel('signless_Laplacian_matrix_encoded.xlsx')
     print('Actual subnormalization:')

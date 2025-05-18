@@ -305,12 +305,8 @@ def test_ocean_acoustic_GEPs(data_item, dim):
     circuit = blockencoding.qcircuit(data_item=data_item,
                                      num_working_qubits=num_working_qubits)
 
-    # Get the unitary of circuit
-    unitary = circuit.matrix()
-    unitary = np.array(unitary).reshape(2 ** num_qubits, 2 ** num_qubits)
-
     # Get the encoded matrix
-    encoded_matrix = blockencoding.get_encoded_matrix(unitary, num_working_qubits)
+    encoded_matrix = blockencoding.get_encoded_matrix(circuit, num_qubits, num_working_qubits)
 
     return circuit, encoded_matrix
 
