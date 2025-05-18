@@ -1,7 +1,7 @@
 # DSBLE
 Dictionary-based sparse block encoding for quantum circuits
 
-This algorithm is bulit on top of [mindquantum](https://www.mindspore.cn/mindquantum/docs/en/r0.6/index.html) in Python
+This algorithm is built on top of [mindquantum](https://www.mindspore.cn/mindquantum/docs/en/r0.6/index.html) in Python.
 
 ## 1. Install Python and Python packages
 
