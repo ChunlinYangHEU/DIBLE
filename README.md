@@ -37,4 +37,4 @@ https://doi.org/10.48550/arXiv.2405.18007).
 
 ## Note
 
-Put the folder "[dsble](https://github.com/ChunlinYangHEU/DISBLE/tree/main/dible)" under the root directory of your project
+Put the folder "[dible](https://github.com/ChunlinYangHEU/DISBLE/tree/main/dible)" under the root directory of your project
