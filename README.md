@@ -1,7 +1,10 @@
-# DSBLE
-Dictionary-based sparse block encoding for quantum circuits
+# DIBLE
+Quantum circuits for implementing dictionary-based block encoding of sparse matrices
 
 This algorithm is built on top of [mindquantum](https://www.mindspore.cn/mindquantum/docs/en/r0.6/index.html) in Python.
+
+This work is presented in the paper titled 'Dictionary-based block encoding of sparse matrices with low subnormalization and circuit depth' available on arXiv at [https://doi.org/10.48550/arXiv.2405.18007](
+https://doi.org/10.48550/arXiv.2405.18007).
 
 ## 1. Install Python and Python packages
 
@@ -34,4 +37,4 @@ This algorithm is built on top of [mindquantum](https://www.mindspore.cn/mindqua
 
 ## Note
 
-Put the folder "[dsble](https://github.com/ChunlinYangHEU/DISBLE/tree/main/dsble)" under the root directory of your project
+Put the folder "[dsble](https://github.com/ChunlinYangHEU/DISBLE/tree/main/dible)" under the root directory of your project
