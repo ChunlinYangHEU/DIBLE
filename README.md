@@ -5,7 +5,7 @@ This algorithm is built on top of [mindquantum](https://www.mindspore.cn/mindqua
 
 The paper titled "Dictionary-based Block Encoding of Sparse Matrices with Low Subnormalization and Circuit Depth" presents this work. It is published in the journal **Quantum** and can be accessed at [https://quantum-journal.org/papers/q-2025-07-22-1805/](https://quantum-journal.org/papers/q-2025-07-22-1805/).
 
-## 1. Install Python and Python packages
+## Install Python and Python packages
 
 1. Download and install [Anaconda](https://www.anaconda.com/download)
 
