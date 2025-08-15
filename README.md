@@ -3,8 +3,7 @@ Quantum circuits for implementing dictionary-based block encoding of sparse matr
 
 This algorithm is built on top of [mindquantum](https://www.mindspore.cn/mindquantum/docs/en/r0.6/index.html) in Python.
 
-This work is presented in the paper titled 'Dictionary-based block encoding of sparse matrices with low subnormalization and circuit depth' available on arXiv at [https://doi.org/10.48550/arXiv.2405.18007](
-https://doi.org/10.48550/arXiv.2405.18007).
+The paper titled "Dictionary-based Block Encoding of Sparse Matrices with Low Subnormalization and Circuit Depth" presents this work. It is published in the journal **Quantum** and can be accessed at [https://quantum-journal.org/papers/q-2025-07-22-1805/](https://quantum-journal.org/papers/q-2025-07-22-1805/).
 
 ## 1. Install Python and Python packages
 
